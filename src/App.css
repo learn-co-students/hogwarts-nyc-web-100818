@@ -64,7 +64,7 @@ ul {
 
 .subtleText {
   color: #D1D1D1;
-  font-size: .75em; 
+  font-size: .75em;
 }
 
 
@@ -74,7 +74,7 @@ ul {
 
 
 .pigTile {
-  display: inline;
+  display: inline-block;
   background-repeat: no-repeat;
   background-position: center 90%;
   float: left;
@@ -83,6 +83,7 @@ ul {
   outline: #3B0B0B dotted thick;
   transition: 0.75s;
   opacity: 1;
+  cursor: pointer;
 }
 
 .minBackgroundSneak {
@@ -123,7 +124,7 @@ ul {
 
 
 .App-logo {
-  animation: App-logo-spin infinite 5s linear;
+  animation: App-logo-spin infinite 1s;
   height: 80px;
   transition: all .2s ease-in-out;
 }
@@ -135,6 +136,7 @@ ul {
 
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  0% { transform: rotate(8deg); }
+  50% { transform: rotate(-8deg); }
+  100% { transform: rotate(8deg); }
 }
